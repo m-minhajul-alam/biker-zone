@@ -24,6 +24,7 @@
                     colors: {
                         clifford: '#da373d',
                         'biker-btn-bg': '#E76F51',
+                        'biker-carousel-bg': 'rgba(231, 111, 81, 0.10)',
                     }
                 }
             }
@@ -54,28 +55,108 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>home</a></li>
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-medium">
+                            <li><a>Home</a></li>
                             <li><a>Shop</a></li>
                             <li><a>News</a></li>
                             <li><a>contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost normal-case text-xl">Bike Dekho</a>
+                    <a class="btn btn-ghost normal-case text-4xl font-bold">Bike Dekho</a>
                 </div>
-                <div class="navbar-end hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>home</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>News</a></li>
-                        <li><a>contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <a class="btn bg-biker-btn-bg text-white">Login</a>
+                <div class="navbar-end">
+                    <div class=" hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-base font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="btn bg-biker-btn-bg text-white text-xl font-semibold">Login</a>
+                    </div>
                 </div>
             </div>
         </nav>
+
+        <!-- carousel section -->
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen bg-biker-carousel-bg mx-8 lg:p-12 ">
+                        <div class="hero-content flex-col lg:flex-row-reverse text-center lg:text-left">
+                            <img src="images/slider/bike1.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                                <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                                <p class="py-6 text-base font-light">Amet minim mollit non deserunt ullamco <br>
+                                    est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit
+                                    mollit.</p>
+                                <button class="btn text-white bg-biker-btn-bg text-xl font-semibold">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen bg-biker-carousel-bg mx-8 lg:p-12 ">
+                        <div class="hero-content flex-col lg:flex-row-reverse text-center lg:text-left">
+                            <img src="images/slider/bike2.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                                <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                                <p class="py-6 text-base font-light">Amet minim mollit non deserunt ullamco <br>
+                                    est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit
+                                    mollit.</p>
+                                <button class="btn text-white bg-biker-btn-bg text-xl font-semibold">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen bg-biker-carousel-bg mx-8 lg:p-12 ">
+                        <div class="hero-content flex-col lg:flex-row-reverse text-center lg:text-left">
+                            <img src="images/slider/bike3.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                                <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                                <p class="py-6 text-base font-light">Amet minim mollit non deserunt ullamco <br>
+                                    est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit
+                                    mollit.</p>
+                                <button class="btn text-white bg-biker-btn-bg text-xl font-semibold">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen bg-biker-carousel-bg mx-8 lg:p-12 ">
+                        <div class="hero-content flex-col lg:flex-row-reverse text-center lg:text-left">
+                            <img src="images/slider/bike4.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                                <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                                <p class="py-6 text-base font-light">Amet minim mollit non deserunt ullamco <br>
+                                    est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit
+                                    mollit.</p>
+                                <button class="btn text-white bg-biker-btn-bg text-xl font-semibold">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
