@@ -15,18 +15,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- tailwind costome configaration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'biker-btn-bg': '#E76F51',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- coustome style -->
     <style>
-        body {
+        .poppins {
             font-family: 'Poppins', sans-serif;
         }
     </style>
 
 </head>
 
-<body>
-
+<body class="poppinsy">
     <header>
-
+        <!-- nav section -->
+        <nav>
+            <div class="navbar bg-base-100 py-4 px-6">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl">Bike Dekho</a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="btn bg-biker-btn-bg text-white">Login</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
